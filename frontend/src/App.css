@@ -1,0 +1,113 @@
+*
+{
+    font-family: 'Poppins', 'Inter', sans-serif;
+}
+.loadingpagecontainer{
+    width: 100vw;
+    height: 100vh;
+    background: url('../public/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.hpnavbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7rem 1.5rem;
+    align-items: center;
+}
+
+button{
+    all: unset;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.appname{
+    border: none;
+    color: white;
+    background: transparent;
+    font-size: 1.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.appicon{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 0.5rem;
+    border-radius: 10%;
+    position: relative;
+    top: 0.65rem;
+}
+
+.navlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.loadingpagecontent{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+
+}
+.loadingpagecontentleft{
+    font-size: 2.2rem;
+    padding-top: 20vh;
+}
+.loadingpagecontentright img{
+    margin-right: 1.5rem;
+
+    height: 80vh;
+    width: auto;
+}
+
+.loadingpagecontentleft p {
+    padding-top: 1rem;
+    font-weight: 200;
+    opacity: 0.6;
+}
+
+.loadingpagecontentleft > div{
+    padding-top: 1.8rem;
+}
+
+.loadingpagecontentleft > div button
+{
+    font-size: 1.2rem;
+    background-color: #FF9839;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.getstartedbutton
+{
+    font-size: 1.2rem;
+    background-color: #FF9839;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.navlinks >p
+{
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.navlinks >div p
+{
+    font-size: 1rem;
+    background-color: #FF9839;
+    padding: 0.45rem 0.85rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
+

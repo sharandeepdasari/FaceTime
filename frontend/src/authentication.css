@@ -1,0 +1,156 @@
+.auth-container {
+                    display: flex;
+                    height: 100vh;
+                    width: 100%;
+                }
+                
+                .auth-image-section {
+                    flex: 1;
+                    display: none;
+                    background-image: url('https://images.unsplash.com/photo-1497366811353-6870744d04b2');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    background-color: #f5f5f5;
+                }
+                
+                .auth-form-section {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2rem;
+                }
+                
+                .auth-form-wrapper {
+                    width: 100%;
+                    max-width: 400px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                .auth-avatar {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: #1976d2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 1rem;
+                }
+                
+                .lock-icon {
+                    width: 24px;
+                    height: 24px;
+                    fill: white;
+                }
+                
+                .auth-tabs {
+                    display: flex;
+                    margin-bottom: 1.5rem;
+                    gap: 1rem;
+                }
+                
+                .auth-tab {
+                    padding: 0.5rem 1rem;
+                    border: none;
+                    background: none;
+                    cursor: pointer;
+                    font-size: 1rem;
+                    color: #555;
+                }
+                
+                .auth-tab.active {
+                    background-color: #1976d2;
+                    color: white;
+                    border-radius: 4px;
+                }
+                
+                .auth-form {
+                    width: 100%;
+                }
+                
+                .form-group {
+                    margin-bottom: 1rem;
+                }
+                
+                .form-group label {
+                    display: block;
+                    margin-bottom: 0.5rem;
+                    font-weight: 500;
+                }
+                
+                .form-group input {
+                    width: 100%;
+                    padding: 0.75rem;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    font-size: 1rem;
+                }
+                
+                .error-message {
+                    color: red;
+                    margin: 0.5rem 0;
+                }
+                
+                .auth-button {
+                    width: 100%;
+                    padding: 0.75rem;
+                    background-color: #1976d2;
+                    color: white;
+                    border: none;
+                    border-radius: 4px;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    margin-top: 1rem;
+                    text-align: center;
+                }
+                
+                .auth-button:hover {
+                    background-color: #1565c0;
+                }
+                
+                .snackbar {
+                    position: fixed;
+                    bottom: 1rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #333;
+                    color: white;
+                    padding: 0.75rem 1.5rem;
+                    border-radius: 4px;
+                    animation: fadeIn 0.5s, fadeOut 0.5s 3.5s;
+                }
+                
+                @keyframes fadeIn {
+                    from { opacity: 0; }
+                    to { opacity: 1; }
+                }
+                
+                @keyframes fadeOut {
+                    from { opacity: 1; }
+                    to { opacity: 0; }
+                }
+                
+                @media (min-width: 600px) {
+                    .auth-image-section {
+                        display: block;
+                        flex: 0 0 50%;
+                    }
+                    
+                    .auth-form-section {
+                        flex: 0 0 50%;
+                    }
+                }
+                
+                @media (min-width: 900px) {
+                    .auth-image-section {
+                        flex: 0 0 58.3333%;
+                    }
+                    
+                    .auth-form-section {
+                        flex: 0 0 41.6667%;
+                    }
+                }
